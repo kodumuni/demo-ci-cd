@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="DTSBase.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="moduleScript.SubstanceTest">
+        <methods>
+          <include name="init"/>
+          <include name="takeScreenShotOnFailures"/>
+          <include name="addThresHold" invocation-numbers="0"/>
+          <include name="addThresHoldwithoutFillingMandatoryFields" invocation-numbers="0"/>
+          <include name="DTV4_442" invocation-numbers="0"/>
+          <include name="statusChange" invocation-numbers="0"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- moduleScript.SubstanceTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

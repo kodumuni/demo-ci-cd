@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [test_suite]">
+  <test name="Loan">
+    <groups>
+      <run>
+        <include name="SmokeTest"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="moduleScript.LoginTest"/>
+      <class name="moduleScript.SubstanceTest"/>
+    </classes>
+  </test> <!-- Loan -->
+  <test name="Loan(failed)">
+    <groups>
+      <run>
+        <include name="SmokeTest"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="moduleScript.LoginTest">
+        <methods>
+          <include name="login_DTS" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- moduleScript.LoginTest -->
+    </classes>
+  </test> <!-- Loan(failed) -->
+</suite> <!-- Failed suite [test_suite] -->
