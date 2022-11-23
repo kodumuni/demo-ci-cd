@@ -35,7 +35,7 @@ public class GoogleTest extends BaseClass {
 	public static Object[][] gettestdata(Method m) throws Exception {
 		String data;
 		String testname;
-		data = "C:\\Users\\rajesh.su\\Desktop\\ALF Demo\\kodu.xlsx";
+		data = "files\\demotest.xlsx";
 		testname = m.getName();
 		System.out.println(testname);
 		Object[][] testdata = ExcelUtility.getvalues(data, "Test", testname);
