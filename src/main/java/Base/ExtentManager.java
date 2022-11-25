@@ -9,7 +9,7 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 
 public class ExtentManager {
 	private static ExtentReports extent;
-	private static String reportFileName = "Automation Report - Regression " + ".html";
+	private static String reportFileName = "AutomationReport"+".html";
 	private static String fileSeperator = System.getProperty("file.separator");
 	private static String reportFilepath = System.getProperty("user.dir") + fileSeperator + "ExtentReports";
 	private static String reportFileLocation = reportFilepath + fileSeperator + reportFileName;
