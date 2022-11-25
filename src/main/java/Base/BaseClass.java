@@ -27,7 +27,7 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
-
+import org.testng.annotations.AfterClass;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import com.github.javafaker.Faker;
@@ -91,10 +91,10 @@ public class BaseClass {
 
 	}
 
-	@AfterTest
-	public void tearDown() throws InterruptedException {
-		Thread.sleep(3000);
-		driver.close();
+	@AfterClass    
+	public void tearDown() throws InterruptedException 
+	{                
+		driver.quit();    
 	}
 
 	public static void quit() {
