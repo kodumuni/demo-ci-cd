@@ -60,6 +60,7 @@ public class BaseClass {
 //		} else {
 //			System.out.println("Invalid Browser : Enter Browser Name: eg. (Firefox, Edge, Chrome)");
 //		}
+		
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
 	}

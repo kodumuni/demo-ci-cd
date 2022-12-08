@@ -7,7 +7,8 @@
 	<test name="Test">
 		<classes>
 			<class name="moduleScript.Launch" />
-            <class name="moduleScript.Modules" />
+			<class name="moduleScript.Modules" />
+			
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
