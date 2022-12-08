@@ -91,9 +91,9 @@ public class BaseClass {
 
 	}
 
-	@AfterClass
+	@AfterTest
 	public void tearDown() throws InterruptedException {
-	driver.quit();
+	driver.close();
 	}
 
 	public static void quit() {
