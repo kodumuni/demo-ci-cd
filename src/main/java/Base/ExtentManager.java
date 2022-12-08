@@ -39,7 +39,7 @@ public class ExtentManager {
 		extent.setSystemInfo("OS", "Windows");
 		extent.setSystemInfo("Tool", "Selenium-java-3.141.59");
 		extent.setSystemInfo("Browser", "Chrome");
-		extent.setSystemInfo("Project", "AFL");
+		extent.setSystemInfo("Project", "ETE");
 
 		return extent;
 	}
